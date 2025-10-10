@@ -1,11 +1,13 @@
 import com.android.build.gradle.internal.tasks.FinalizeBundleTask
 
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-parcelize'
-apply plugin: 'kotlin-kapt'
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.google.firebase.appdistribution'
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.google.services)
+    alias(libs.plugins.firebase.appdistribution)
+}
 
 def SCHEME_BASE = "cryptoxmwallet"
 def WC_SCHEME_BASE = "cryptox-wc"

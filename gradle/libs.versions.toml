@@ -1,8 +1,8 @@
 [versions]
 agp = "8.6.1"
 ktx = "1.9.0"
-kotlin = "1.8.0"
-kotlin-gradle-plugin = "1.9.24"
+kotlin = "1.9.24"
+kotlin-ksp-plugin = "2.0.0-1.0.21"
 lifecycle = "2.4.0"
 room = "2.6.1"
 navigation = "2.3.5"
@@ -154,7 +154,11 @@ push-notifications = ["firebase-messaging", "play-services-location"]
 reown = ["reown-core", "reown-sign"]
 
 [plugins]
-android-gradle = { id = "com.android.tools.build.gradle", version.ref = "agp" }
-kotlin-gradle = { id = "org.jetbrains.kotlin.gradle.plugin", version.ref = "kotlin-gradle-plugin" }
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "kotlin-ksp-plugin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" } # TODO: migrate to ksp
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
 google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
 firebase-appdistribution = { id = "com.google.firebase.appdistribution", version.ref = "firebaseAppDistribution" }
