@@ -1,0 +1,164 @@
+[versions]
+agp = "8.6.1"
+ktx = "1.9.0"
+kotlin = "1.9.24"
+kotlin-ksp-plugin = "2.0.0-1.0.21"
+lifecycle = "2.4.0"
+room = "2.6.1"
+navigation = "2.3.5"
+glide = "4.14.2"
+retrofit = "2.9.0"
+okhttp = "4.9.1"
+logging-interceptor = "3.1.0"
+rxjava2 = "2.2.21"
+coroutines = "1.5.0"
+fragment = "1.4.0"
+android-compat = "1.6.1"
+android-legacy = "1.0.0"
+constraintlayout = "2.2.0"
+recyclerview = "1.2.1"
+cardview = "1.0.0"
+biometric = "1.1.0"
+flexbox = "3.0.0"
+android-material = "1.8.0"
+android-svg = "1.4"
+hashing = "1.1.1"
+barcode = "4.1.0"
+eventbus = "3.3.1"
+browser = "1.4.0"
+snackbar = "V2.0.0"
+blurview = "version-2.0.6"
+bip39 = "1.0.4"
+jackson = "2.19.1"
+jackson-javax = "1.0-2"
+swipetorefresh = "1.2.0-beta01"
+lottie = "6.0.0"
+in-app-rating = "2.0.2"
+dotsindicator = "4.3!!"
+firebase-messaging = "24.0.0!!"
+play-services-location = "21.3.0"
+lombock = "1.18.38"
+reown-bom = "1.0.4"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.3"
+espresso-core = "3.4.0"
+core-testing = "2.1.0"
+room-testing = "1.1.1"
+message-adapter-gson-version = "0.1.12"
+concordium-sdk = "11.0.1"
+googleServices = "4.4.3"
+firebaseAppDistribution = "2.2.0"
+
+[libraries]
+androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
+androidx-legacy = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "android-legacy" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "android-compat" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+androidx-biometric = { group = "androidx.biometric", name = "biometric", version.ref = "biometric" }
+android-flexbox = { module = "com.google.android.flexbox:flexbox", version.ref = "flexbox" }
+android-material = { module = "com.google.android.material:material", version.ref = "android-material" }
+android-svg = { module = "com.caverock:androidsvg", version.ref = "android-svg" }
+barcode = { module = "com.journeyapps:zxing-android-embedded", version.ref = "barcode" }
+eventbus = { module = "org.greenrobot:eventbus", version.ref = "eventbus" }
+browser-tabs = { module = "androidx.browser:browser", version.ref = "browser" }
+snackbar = { module = "com.github.Redman1037:TSnackBar", version.ref = "snackbar" }
+blurview = { module = "com.github.Dimezis:BlurView", version.ref = "blurview" }
+kotlin-bip39 = { module = "cash.z.ecc.android:kotlin-bip39", version.ref = "bip39" }
+hashing = { module = "com.github.komputing.khash:sha256", version.ref = "hashing" }
+jackson-core = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jackson" }
+jackson-datatype-jsr310 = { group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jsr310", version.ref = "jackson" }
+jackson-datatype-jdk8 = { group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jdk8", version.ref = "jackson" }
+jackson-dataformat-xml = { group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-xml", version.ref = "jackson" }
+jackson-javax = { module = "javax.xml.stream:stax-api", version.ref = "jackson-javax" }
+swipetorefresh = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swipetorefresh" }
+lottie-animation = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+dotsindicator = { module = "com.tbuonomo:dotsindicator", version.ref = "dotsindicator" }
+lombock = { module = "org.projectlombok:lombok", version.ref = "lombock" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "core-testing" }
+testing-room = { group = "android.arch.persistence.room", name = "testing", version.ref = "room-testing" }
+message-adapter-gson = { module = "com.tinder.scarlet:message-adapter-gson", version.ref = "message-adapter-gson-version"}
+concordium-android-sdk = { module = "com.concordium.sdk:concordium-android-sdk", version.ref = "concordium-sdk" }
+
+# Kotlin
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# Lifecycle
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle-common = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "lifecycle" }
+fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment" }
+
+# Room
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-testing = { module = "androidx.room:room-testing", version.ref = "room" }
+
+# Navigation
+navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+
+#Image
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+
+# Networking
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+converter-scalars = { module = "com.squareup.retrofit2:converter-scalars", version.ref = "retrofit" }
+okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
+ihsanbal-logging-interceptor = { module = "com.github.ihsanbal:LoggingInterceptor", version.ref = "logging-interceptor" }
+rxjava2 = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxjava2" }
+
+# In-app rating
+in-app-review = { module = "com.google.android.play:review", version.ref = "in-app-rating" }
+in-app-review-ktx = { module = "com.google.android.play:review-ktx", version.ref = "in-app-rating" }
+
+# Push notifications
+firebase-messaging = { module = "com.google.firebase:firebase-messaging", version.ref = "firebase-messaging" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "play-services-location" }
+
+# Reown (formerly WalletConnect)
+reown-bom = { module = "com.reown:android-bom", version.ref = "reown-bom" }
+reown-core = { module = "com.reown:android-core" }
+reown-sign = { module = "com.reown:sign" }
+
+
+[bundles]
+android-core = ["androidx-ktx", "androidx-legacy", "androidx-appcompat"]
+android-ui = [
+    "androidx-constraintlayout", "androidx-recyclerview",
+    "androidx-cardview", "android-flexbox", "android-material", "android-svg"
+]
+lifecycle = [
+    "lifecycle-viewmodel-ktx", "lifecycle-livedata-ktx",
+    "lifecycle-runtime-ktx", "fragment-ktx"
+]
+kotlin = ["kotlin-stdlib", "kotlin-reflect", "coroutines-android"]
+room = ["room-runtime", "room-ktx"]
+navigation = ["navigation-fragment-ktx", "navigation-ui-ktx"]
+networking = ["retrofit", "converter-gson", "okhttp-logging-interceptor", "converter-scalars"]
+jackson = [
+    "jackson-core", "jackson-datatype-jsr310", "jackson-datatype-jdk8",
+    "jackson-dataformat-xml", "jackson-javax"
+]
+push-notifications = ["firebase-messaging", "play-services-location"]
+reown = ["reown-core", "reown-sign"]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "kotlin-ksp-plugin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" } # TODO: migrate to ksp
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+firebase-appdistribution = { id = "com.google.firebase.appdistribution", version.ref = "firebaseAppDistribution" }
